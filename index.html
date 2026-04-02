@@ -2,7 +2,11 @@
  learning HTML with the given same time I guess for the game but also  fun of it-->
 
 <!DOCTYPE html> <!-- helps browsers display web pages correctly depending on the page code type-->
-<html> <!-- "all HTML documents start and end with this tag", it is the root of an HTML document-->
+<html lang = "en-US"> <!-- "all HTML documents start and end with this tag", it is the root of an HTML document-->
+<!-- change here, on April 2, 2026, add lang attribute
+        specifically, could have done lang="en" purely just for english
+        but, you could also do lang="en-US" denoting both language and country-->
+
 
 <head>
     <title>i guess a title goes here, but it's not displayed anywhere. strange</title>
@@ -108,11 +112,58 @@
 
 
     <p> this should work, relative (self hosted) image o(*￣▽￣*)ブ</p>
-    <img src="/images/thank_you_chainsaw_man.webp">
+    <img src="images/thank_you_chainsaw_man.webp">
+
+    <!-- important to note here, if the relative link starts with slash, it actually looks at root dir for file, with no slash at start now, it displays properly.-->
 
     <!-- 
     Width and height for images, need this because holy is the jack the rabbit clock image so huge without altering it. lmao
 -->
+
+<!-- recall that img tag/element has additional attributes,
+    <img src = "image.jpg" width="500" height="600">-
+        specifies the width and heigh of the image (in pixels)
+
+    <img src= "image.jpg" alt= "image"> - 
+        specifies an alternate text for an image, useful when the image can't be displayed either due to a slow connection or an error between code or displaying the site
+-->
+
+<!-- new tech, style Attribute
+    used to add styles to an element, such as color, font, size, and more, 
+    further discussed later on in the HTML Styles chapter, for now this is the example
+-->
+    <p style = "color:blueviolet;"> look at me! i'm in colored text!</p>
+
+    <!-- this is a bit out of the water from the other attributes we've covered so for but lang
+        should always include the lang attribute inside the <html> tag
+            this declares the language of teh Web page, meant to assist search engines and browsers
+                in short lang="language"
+                or lang="language-country"
+                with both of the parameters as two letters
+                    so english is en
+                    United States is US
+                together, for a site in english for the US
+                    lang="en-US"
+            -->
+
+    <!--next attribute, title
+        defines some extra information about an element
+        the value of the title attribute will be displayed as a tooltip when you mouse over the element:
+    -->
+
+    <p title="bleh blehh"> this is a test of the title attribute, gotcha</p>
+
+    <!-- wrapping up intro to attributes,
+     * stick to either upper or lowercase attribtutes [we stick to lower]
+     * quote attribute values, not a requirement, but XHTML does
+        -good:
+            <a href="https://www.w3schools.com/html/">Visit our HTML tutorial</a>
+        -bad:
+            <a href=https://www.w3schools.com/html />Visit our HTML tutorial</a>
+        -->
+        
+    <h1 title="i'm sitting in CMSC426, 2:56PM. need this weekend" style="color:purple;">end of attributes page. boom, finally. Thursday April 2, 2026</p>
+
 
 </body>
 
